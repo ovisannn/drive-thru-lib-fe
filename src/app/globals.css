@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3131317c;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(65, 65, 65, 0.658);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3b3b3b;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #9c9c9c;
+  border-radius: 5px;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,6 +43,7 @@
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -25,6 +52,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
 
 @layer utilities {
   .text-balance {
